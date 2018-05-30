@@ -1,4 +1,4 @@
-# [Lighthouse](https://github.com/GoogleChrome/lighthouse) IsaacAI [![npm lighthouse-isaacai package]](https://npmjs.org/package/lighthouse-isaacai)
+# Lighthouse IsaacAI [npm lighthouse-isaacai package](https://npmjs.org/package/lighthouse-isaacai)
 
 **Runs the default Google Lighthouse tests with additional audits.**
 

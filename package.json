@@ -1,14 +1,14 @@
 {
-  "name": "lighthouse-security",
-  "description": "Runs the default Google Lighthouse tests with additional security tests",
-  "version": "0.5.0",
+  "name": "lighthouse-isaacai",
+  "description": "Runs the Google Lighthouse with some additional audits",
+  "version": "0.1.0",
   "license": "Apache-2.0",
   "engineStrict": true,
   "engines": {
     "node": ">=6"
   },
   "bin": {
-    "lighthouse-security": "./bin/index.js"
+    "lighthouse-isaacai": "./bin/index.js"
   },
   "scripts": {
     "coverage": "nyc --reporter=html npm run unit",
@@ -17,11 +17,11 @@
     "test": "npm run lint && npm run unit",
     "unit": "mocha --reporter dot $(find test -name '*-test.js') --timeout 60000;"
   },
-  "author": "De Voorhoede (https://www.voorhoede.nl)",
-  "homepage": "https://github.com/voorhoede/lighthouse-security#readme",
+  "author": "Seong Bae",
+  "homepage": "https://github.com/seongbae/lighthouse-isaacai",
   "repository": {
     "type": "git",
-    "url": "https://github.com/voorhoede/lighthouse-security"
+    "url": "https://github.com/voorhoede/lighthouse-isaacai"
   },
   "keywords": [
     "lighthouse",
@@ -30,7 +30,7 @@
     "websecurity"
   ],
   "dependencies": {
-    "lighthouse": "2.7.0",
+    "lighthouse": "2.9.4",
     "request": "^2.85.0",
     "valid-url": "1.0.9"
   },

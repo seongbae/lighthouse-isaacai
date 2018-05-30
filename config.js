@@ -13,6 +13,7 @@ module.exports = {
   // Add gatherer to the default Lighthouse load ('pass') of the page.
   passes: [{
     passName: 'defaultPass',
+    recordTrace: false,
     gatherers: [
       ...addDirFiles(dirs.gatherers, [
         'csp-meta',
@@ -84,7 +85,7 @@ module.exports = {
       name: 'Security',
       description: 'Scores for some of the best practices for web security',
       audits: [
-        // When we add more custom audits, `weight` controls how they're averaged together.
+        //When we add more custom audits, `weight` controls how they're averaged together.
         {group: 'secure-connection', id: 'is-on-https', weight: 1},
         {group: 'secure-connection', id: 'redirects-http', weight: 1},
         {group: 'secure-connection', id: 'strict-transport-security', weight: 1},
